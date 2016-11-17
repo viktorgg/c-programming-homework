@@ -6,7 +6,7 @@ int main()
    char string[100];
    int c=0,broi[26]={0};
 
-  scanf("[%\n]",string);
+  fgets(string,100,stdin);
 
    while(string[c] != '\0')
    {
