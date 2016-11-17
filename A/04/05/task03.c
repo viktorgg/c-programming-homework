@@ -6,7 +6,7 @@ int main()
    char string[100];
    int c=0,broi[26]={0};
 
-   gets(string);
+   scanf("%s",string);
 
    while(string[c] != '\0')
    {
