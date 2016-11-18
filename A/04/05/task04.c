@@ -12,12 +12,12 @@ int main()
 	for(i=0;i<broi;i++)
 	if(j==array[i])
 		f=0;
-	if(f==1){
+	if(f>0){
 	array[broi]=j;broi=broi+1;
 	      }
         }
-	for(i=0;i<broi;i++){
+	for(i=0;i<broi;i++)
         sum+=fmod(array[i],broi);
-        }
+        
 	printf("%d\n%.3f", broi, sum);
 }
