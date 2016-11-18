@@ -10,13 +10,13 @@ int main()
 
 	while(scanf("%f",&j)!=EOF){
     do{
-        if(j==array[i])
+        if(array[i]==j)
         f=0;
-        if(f>0){
+        if(f==1){
         array[broi]=j;
         broi=broi+1;
         }
-        f=1; i=i+1;
+        i=i+1;
     }while(i<broi);
 	}
 	for(i=0;i<broi;i++){
@@ -24,3 +24,4 @@ int main()
 	printf("%d\n%.3f", broi, sum);
 	}
 }
+
