@@ -9,16 +9,13 @@ int main()
 	int i=0,broi=0,f=1;
 
 	while(scanf("%f",&j)!=EOF){
-	for(i=0;i<broi;i++){
-	if(array[i]==j){
+	for(i=0;i<broi;i++)
+	if(j==array[i])
 		f=0;
-		}
-	      }
 	if(f==1){
 	array[broi]=j;broi=broi+1;
 	      }
         }
-	printf("%d \n",broi);
 	for(i=0;i<broi;i++){
         sum+=fmod(array[i],broi);
         }
